@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-monorepo-starter",
+  "private": true,
+  "packageManager": "pnpm@9.15.5",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.3.0",
+      "react-dom": "19.3.0"
+    }
+  }
+}
